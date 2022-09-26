@@ -20,53 +20,55 @@
     ></script>
   </head>
   <body>
-    <div class="card">
-      <div class="card-body">
-        <h3 class="card-title">Cotizador de Servicios</h3>
+    <div class="content">
+      <div class="card">
+        <div class="card-body">
+          <h3 class="card-title">Cotizador de Servicios</h3>
 
-        <div class="col-md-6">
-          <select class="form-select" id="listServicio" aria-label="Default select example"></select>
-          <div class="alert alert-danger" id="alertServicio" role="alert">Seleccione Opcion Valida!!</div>
-        </div>
-
-        <div class="col-md-6" id="divPintura">
           <div class="col-md-6">
-            <select class="form-select" id="listPintura" aria-label="Default select example"></select>
-            <div class="alert alert-danger" id="alertPintura" role="alert">Seleccione Opcion Valida!!</div>
+            <select class="form-select" id="listServicio" aria-label="Default select example"></select>
+            <div class="alert alert-danger" id="alertServicio" role="alert">Seleccione Opcion Valida!!</div>
           </div>
-          <div class="col-md-6" id="divCasa">
-            <div class="mb-3">
-              <label for="txtMtCasa" class="form-label">¿Cantidad de metros cuadrados?</label>
-              <input class="form-control" id="txtMtCasa" />
+
+          <div class="col-md-6" id="divPintura">
+            <div class="col-md-6">
+              <select class="form-select" id="listPintura" aria-label="Default select example"></select>
+              <div class="alert alert-danger" id="alertPintura" role="alert">Seleccione Opcion Valida!!</div>
+            </div>
+            <div class="col-md-6" id="divCasa">
+              <div class="mb-3">
+                <label for="txtMtCasa" class="form-label">¿Cantidad de metros cuadrados?</label>
+                <input class="form-control" id="txtMtCasa" type="number" />
+              </div>
+            </div>
+            <div class="col-md-6" id="divEdificio">
+              <div class="mb-3">
+                <label for="txtPisos" class="form-label">¿Cantidad de pisos ?</label>
+                <input class="form-control" id="txtPisos" type="number" />
+              </div>
+              <div class="mb-3">
+                <label for="txtMtEdificio" class="form-label">¿Cantidad de metros cuadrados?</label>
+                <input class="form-control" id="txtMtEdificio" type="number" />
+              </div>
             </div>
           </div>
-          <div class="col-md-6" id="divEdificio">
+
+          <div class="col-md-6" id="divRadier">
             <div class="mb-3">
-              <label for="txtPisos" class="form-label">¿Cantidad de pisos ?</label>
-              <input class="form-control" id="txtPisos" />
+              <label for="txtMtRadier" class="form-label">¿Cantidad de metros cuadrados?</label>
+              <input class="form-control" id="txtMtRadier" type="number" />
             </div>
             <div class="mb-3">
-              <label for="txtMtEdificio" class="form-label">¿Cantidad de metros cuadrados?</label>
-              <input class="form-control" id="txtMtEdificio" />
+              <label for="txtCmRadier" class="form-label">¿Altura en cm del radier? (cm)</label>
+              <input class="form-control" id="txtCmRadier" type="number" />
             </div>
           </div>
+
+          <button type="button" id="btnCalcular" class="btn btn-primary">Calcular</button>
+          <div class="alert alert-success" id="alertValor" role="alert"></div>
+
+          <script src="./index.js"></script>
         </div>
-
-        <div class="col-md-6" id="divRadier">
-          <div class="mb-3">
-            <label for="txtMtRadier" class="form-label">¿Cantidad de metros cuadrados?</label>
-            <input class="form-control" id="txtMtRadier" />
-          </div>
-          <div class="mb-3">
-            <label for="txtCmRadier" class="form-label">¿Altura en cm del radier? (cm)</label>
-            <input class="form-control" id="txtCmRadier" />
-          </div>
-        </div>
-
-        <button type="button" id="btnCalcular" class="btn btn-primary">Calcular</button>
-        <div class="alert alert-success" id="alertValor" role="alert"></div>
-
-        <script src="./index.js"></script>
       </div>
     </div>
   </body>
